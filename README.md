@@ -18,54 +18,52 @@ A dynamic, full-featured web-based Game Store and Inventory Management System bu
 ## Directory Structure
 
 ```text
-Game Store Database/
+.
 |-- .gitignore
 |-- README.md
-|-- Game Store Database Management System/
-|   |-- assets/
-|   |   |-- css/
-|   |   |   `-- styles.css
-|   |   |-- js/
-|   |   |   `-- scripts.js
-|   |   |-- videos/
-|   |   |   `-- home.mp4
-|   |   `-- images/
-|   |       |-- games/          # Game cover artwork (4.jpg to 53.jpg)
-|   |       `-- ui/             # UI elements and backgrounds
-|   |-- includes/
-|   |   `-- db_connect.php      # MySQL database connection configuration
-|   |-- tools/
-|   |   `-- hash_password.php   # Utility password hashing helper
-|   |-- index.php               # Application entry point
-|   |-- home.php                # Main store page & catalog
-|   |-- product.php             # Individual game showcase & reviews
-|   |-- cart.php                # Shopping cart
-|   |-- order_summary.php       # Order checkout
-|   |-- order_confirmation.php  # Order summary receipt
-|   |-- orders.php              # Customer order history
-|   |-- order_details.php       # Order items breakdown
-|   |-- admin_inventory.php     # Admin inventory & orders management
-|   |-- login.php               # User login
-|   |-- register.php            # User registration
-|   |-- logout.php              # Session termination
-|   |-- search.php              # AJAX search API
-|   |-- add_review.php          # Review submission action
-|   |-- update_cart.php         # Cart quantity update action
-|   |-- remove_cart.php         # Cart removal action
-|   `-- update_order_status.php # Admin order status update action
-|
-`-- Game Store Database Management System_gamestoredb Files/
-    `-- tables/                 # MySQL database SQL dump files
-        |-- cart.sql
-        |-- categories.sql
-        |-- games.sql
-        |-- inventory.sql
-        |-- orderdetails.sql
-        |-- orders.sql
-        |-- payments.sql
-        |-- publishers.sql
-        |-- reviews.sql
-        `-- users.sql
+|-- assets/
+|   |-- css/
+|   |   `-- styles.css          # Main styling & animations
+|   |-- js/
+|   |   `-- scripts.js          # Client-side scripts & category filters
+|   |-- videos/
+|   |   `-- home.mp4            # Background video
+|   `-- images/
+|       |-- games/              # Game cover artwork (4.jpg to 53.jpg)
+|       `-- ui/                 # UI assets (adobe.png, neon.jpg, icon.png, etc.)
+|-- database/
+|   `-- tables/                 # MySQL database SQL dump files
+|       |-- cart.sql
+|       |-- categories.sql
+|       |-- games.sql
+|       |-- inventory.sql
+|       |-- orderdetails.sql
+|       |-- orders.sql
+|       |-- payments.sql
+|       |-- publishers.sql
+|       |-- reviews.sql
+|       `-- users.sql
+|-- includes/
+|   `-- db_connect.php          # MySQL database connection configuration
+|-- tools/
+|   `-- hash_password.php       # Utility password hashing helper
+|-- index.php                   # Application entry point
+|-- home.php                    # Main store page & catalog
+|-- product.php                 # Individual game showcase & reviews
+|-- cart.php                    # Shopping cart
+|-- order_summary.php           # Order checkout
+|-- order_confirmation.php      # Order summary receipt
+|-- orders.php                  # Customer order history
+|-- order_details.php           # Order items breakdown
+|-- admin_inventory.php         # Admin inventory & orders management
+|-- login.php                   # User login
+|-- register.php                # User registration
+|-- logout.php                  # Session termination
+|-- search.php                  # AJAX search API
+|-- add_review.php              # Review submission action
+|-- update_cart.php             # Cart quantity update action
+|-- remove_cart.php             # Cart removal action
+`-- update_order_status.php     # Admin order status update action
 ```
 
 ---
@@ -86,16 +84,16 @@ Game Store Database/
    ```
 
 2. **Move to Web Server Directory**:
-   - Move or copy the project folder to your local server root (e.g., `C:/xampp/htdocs/` for XAMPP).
+   - Move or clone the project folder into your web server root (e.g., `C:/xampp/htdocs/game-store`).
 
 3. **Set Up the Database**:
    - Open **phpMyAdmin** (`http://localhost/phpmyadmin`).
    - Create a new database named `gamestoredb`.
-   - Import all table `.sql` files located inside `Game Store Database Management System_gamestoredb Files/tables/`.
-     *(Import in order: `users.sql`, `categories.sql`, `publishers.sql`, `games.sql`, `inventory.sql`, `cart.sql`, `orders.sql`, `orderdetails.sql`, `payments.sql`, `reviews.sql`)*.
+   - Import all table `.sql` files located inside `database/tables/`.
+     *(Recommended import order: `users.sql`, `categories.sql`, `publishers.sql`, `games.sql`, `inventory.sql`, `cart.sql`, `orders.sql`, `orderdetails.sql`, `payments.sql`, `reviews.sql`)*.
 
 4. **Configure Database Connection**:
-   - Check `Game Store Database Management System/includes/db_connect.php`:
+   - Check `includes/db_connect.php`:
      ```php
      $conn = new mysqli("localhost", "root", "", "gamestoredb");
      ```
@@ -104,7 +102,7 @@ Game Store Database/
 5. **Run the Application**:
    - Open your browser and navigate to:
      ```text
-     http://localhost/Game%20Store%20Database/Game%20Store%20Database%20Management%20System/
+     http://localhost/<your-project-folder-name>/
      ```
 
 ---
