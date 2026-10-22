@@ -36,7 +36,7 @@ $order_details = $details_stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Store - Order Confirmation</title>
+    <title>JayZee E-Store - Order Confirmation</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -420,7 +420,7 @@ $order_details = $details_stmt->get_result();
 <!-- HTML -->
 <footer class="footer text-white py-4" style="background-image: url('assets/images/ui/neon.jpg'); background-size: cover; background-position: center;">
     <div class="footer-content fooooooter">
-        <p>&copy; 2025 Game Store. All Rights Reserved.</p>
+        <p>&copy; 2025 JayZee E-Store. All Rights Reserved.</p>
         <p class="footer-links">
             <a href="#">Privacy Policy</a>
             <span>|</span>

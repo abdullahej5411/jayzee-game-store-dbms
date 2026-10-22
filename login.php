@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Game Store - Login</title>
+    <title>JayZee E-Store - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -193,7 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- Footer -->
 <footer class="footer text-white py-4" style="background-image: url('assets/images/ui/neon.jpg'); background-size: cover; background-position: center;">
     <div class="footer-content fooooooter">
-        <p>&copy; 2025 Game Store. All Rights Reserved.</p>
+        <p>&copy; 2025 JayZee E-Store. All Rights Reserved.</p>
         <p class="footer-links">
             <a href="#">Privacy Policy</a>
             <span>|</span>

@@ -1,6 +1,6 @@
-# JayZee Game Store Database Management System
+# JayZee E-Store - Game Store & Database Management System
 
-A dynamic, full-featured web-based Game Store and Inventory Management System built using PHP, MySQL, Bootstrap 5, and JavaScript.
+A dynamic, full-featured web-based Game Store and Inventory Management System built using PHP, MySQL, Bootstrap 5, and JavaScript for **JayZee E-Store**.
 
 ---
 

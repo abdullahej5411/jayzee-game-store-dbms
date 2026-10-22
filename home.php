@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Store - Home</title>
+    <title>JayZee E-Store - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -354,7 +354,7 @@ echo "<img src='assets/images/games/{$game['GameID']}.jpg' class='card-img-top i
 <footer class="footer site-end text-white py-4" style="background-image: url('assets/images/ui/neon.jpg'); background-size: cover; background-position: center;">
             <div class="end-content">
                 
-            <p>&copy; 2025 Game Hub. All Rights Reserved.</p>
+            <p>&copy; 2025 JayZee E-Store. All Rights Reserved.</p>
                 <p class="privacy-links">
                     <a href="#">Data Privacy</a>
                     <span>|</span>
